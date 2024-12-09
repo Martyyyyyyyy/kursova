@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet2">
+    <Query>
+      <DataSourceReference>DataSource1</DataSourceReference>
+      <CommandText>EVALUATE SUMMARIZECOLUMNS('Dim Movie'[Movie ID], 'Dim Movie'[Category], 'Dim Movie'[Title], 'Dim Movie'[Release Date])</CommandText>
+      <rd:DesignerState>
+        <QueryDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition">
+          <CommandType>DAX</CommandType>
+          <QuerySpecification xsi:type="MDXQuerySpecification">
+            <Select>
+              <Items>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Dim Movie</DimensionName>
+                    <HierarchyName>Movie ID</HierarchyName>
+                    <HierarchyUniqueName>[Dim Movie].[Movie ID]</HierarchyUniqueName>
+                    <LevelName>Movie ID</LevelName>
+                    <UniqueName>[Dim Movie].[Movie ID].[Movie ID]</UniqueName>
+                  </ID>
+                  <ItemCaption>Movie ID</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Dim Movie</DimensionName>
+                    <HierarchyName>Category</HierarchyName>
+                    <HierarchyUniqueName>[Dim Movie].[Category]</HierarchyUniqueName>
+                    <LevelName>Category</LevelName>
+                    <UniqueName>[Dim Movie].[Category].[Category]</UniqueName>
+                  </ID>
+                  <ItemCaption>Category</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Dim Movie</DimensionName>
+                    <HierarchyName>Title</HierarchyName>
+                    <HierarchyUniqueName>[Dim Movie].[Title]</HierarchyUniqueName>
+                    <LevelName>Title</LevelName>
+                    <UniqueName>[Dim Movie].[Title].[Title]</UniqueName>
+                  </ID>
+                  <ItemCaption>Title</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Dim Movie</DimensionName>
+                    <HierarchyName>Release Date</HierarchyName>
+                    <HierarchyUniqueName>[Dim Movie].[Release Date]</HierarchyUniqueName>
+                    <LevelName>Release Date</LevelName>
+                    <UniqueName>[Dim Movie].[Release Date].[Release Date]</UniqueName>
+                  </ID>
+                  <ItemCaption>Release Date</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+              </Items>
+            </Select>
+            <AutoExecute>false</AutoExecute>
+            <From>Cable TVDW</From>
+            <Filter>
+              <FilterItems>
+                <FilterItem>
+                  <HierarchyUniqueName>[Dim Movie].[Movie ID]</HierarchyUniqueName>
+                  <Condition xsi:type="EqualTo">
+                    <Members>
+                      <Member>
+                        <MemberUniqueName>[Dim Movie].[Movie ID].[All]</MemberUniqueName>
+                      </Member>
+                    </Members>
+                  </Condition>
+                </FilterItem>
+              </FilterItems>
+            </Filter>
+            <Calculations />
+            <Aggregates />
+            <QueryProperties>
+              <IncludeMemberValue>true</IncludeMemberValue>
+            </QueryProperties>
+          </QuerySpecification>
+          <Query>
+            <Statement>EVALUATE SUMMARIZECOLUMNS('Dim Movie'[Movie ID], 'Dim Movie'[Category], 'Dim Movie'[Title], 'Dim Movie'[Release Date])</Statement>
+            <ParameterDefinitions />
+          </Query>
+        </QueryDefinition>
+      </rd:DesignerState>
+    </Query>
+    <Fields>
+      <Field Name="Movie_ID">
+        <DataField>Dim Movie[Movie ID]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Category">
+        <DataField>Dim Movie[Category]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Title">
+        <DataField>Dim Movie[Title]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Release_Date">
+        <DataField>Dim Movie[Release Date]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

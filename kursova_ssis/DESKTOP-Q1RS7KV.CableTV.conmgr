@@ -1,0 +1,12 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="DESKTOP-Q1RS7KV.CableTV"
+  DTS:DTSID="{42B5703D-83CC-4BAD-9EC9-FEF2318C3DDC}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=DESKTOP-Q1RS7KV;Initial Catalog=CableTV;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-kursova_ssis-{42B5703D-83CC-4BAD-9EC9-FEF2318C3DDC}DESKTOP-Q1RS7KV.CableTV;Auto Translate=False;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

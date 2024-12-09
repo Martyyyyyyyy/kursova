@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet1">
+    <Query>
+      <DataSourceReference>DataSource1</DataSourceReference>
+      <CommandText>EVALUATE SUMMARIZECOLUMNS('Dim Subscriber'[Subscriber ID], 'Dim Subscriber'[Name], FILTER(VALUES('Dim Subscriber'[Subscriber ID]), ('Dim Subscriber'[Subscriber ID] = VALUE("1")) || ('Dim Subscriber'[Subscriber ID] = VALUE("2")) || ('Dim Subscriber'[Subscriber ID] = VALUE("3")) || ('Dim Subscriber'[Subscriber ID] = VALUE("4")) || ('Dim Subscriber'[Subscriber ID] = VALUE("5")) || ('Dim Subscriber'[Subscriber ID] = VALUE("6")) || ('Dim Subscriber'[Subscriber ID] = VALUE("7")) || ('Dim Subscriber'[Subscriber ID] = VALUE("8")) || ('Dim Subscriber'[Subscriber ID] = VALUE("9")) || ('Dim Subscriber'[Subscriber ID] = VALUE("10"))), "Usage Hours", [Usage Hours])</CommandText>
+      <rd:DesignerState>
+        <QueryDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition">
+          <CommandType>DAX</CommandType>
+          <QuerySpecification xsi:type="MDXQuerySpecification">
+            <Select>
+              <Items>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Dim Subscriber</DimensionName>
+                    <HierarchyName>Subscriber ID</HierarchyName>
+                    <HierarchyUniqueName>[Dim Subscriber].[Subscriber ID]</HierarchyUniqueName>
+                    <LevelName>Subscriber ID</LevelName>
+                    <UniqueName>[Dim Subscriber].[Subscriber ID].[Subscriber ID]</UniqueName>
+                  </ID>
+                  <ItemCaption>Subscriber ID</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Dim Subscriber</DimensionName>
+                    <HierarchyName>Name</HierarchyName>
+                    <HierarchyUniqueName>[Dim Subscriber].[Name]</HierarchyUniqueName>
+                    <LevelName>Name</LevelName>
+                    <UniqueName>[Dim Subscriber].[Name].[Name]</UniqueName>
+                  </ID>
+                  <ItemCaption>Name</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Measure">
+                    <MeasureName>Usage Hours</MeasureName>
+                    <UniqueName>[Measures].[Usage Hours]</UniqueName>
+                  </ID>
+                  <ItemCaption>Usage Hours</ItemCaption>
+                  <BackColor>true</BackColor>
+                  <ForeColor>true</ForeColor>
+                  <FontFamily>true</FontFamily>
+                  <FontSize>true</FontSize>
+                  <FontWeight>true</FontWeight>
+                  <FontStyle>true</FontStyle>
+                  <FontDecoration>true</FontDecoration>
+                  <FormattedValue>true</FormattedValue>
+                  <FormatString>true</FormatString>
+                </Item>
+              </Items>
+            </Select>
+            <AutoExecute>false</AutoExecute>
+            <From>Cable TVDW</From>
+            <Filter>
+              <FilterItems>
+                <FilterItem>
+                  <HierarchyUniqueName>[Dim Subscriber].[Subscriber ID]</HierarchyUniqueName>
+                  <Condition xsi:type="EqualTo">
+                    <Members>
+                      <Member>
+                        <MemberUniqueName>[Dim Subscriber].[Subscriber ID].&amp;[1]</MemberUniqueName>
+                      </Member>
+                      <Member>
+                        <MemberUniqueName>[Dim Subscriber].[Subscriber ID].&amp;[2]</MemberUniqueName>
+                      </Member>
+                      <Member>
+                        <MemberUniqueName>[Dim Subscriber].[Subscriber ID].&amp;[3]</MemberUniqueName>
+                      </Member>
+                      <Member>
+                        <MemberUniqueName>[Dim Subscriber].[Subscriber ID].&amp;[4]</MemberUniqueName>
+                      </Member>
+                      <Member>
+                        <MemberUniqueName>[Dim Subscriber].[Subscriber ID].&amp;[5]</MemberUniqueName>
+                      </Member>
+                      <Member>
+                        <MemberUniqueName>[Dim Subscriber].[Subscriber ID].&amp;[6]</MemberUniqueName>
+                      </Member>
+                      <Member>
+                        <MemberUniqueName>[Dim Subscriber].[Subscriber ID].&amp;[7]</MemberUniqueName>
+                      </Member>
+                      <Member>
+                        <MemberUniqueName>[Dim Subscriber].[Subscriber ID].&amp;[8]</MemberUniqueName>
+                      </Member>
+                      <Member>
+                        <MemberUniqueName>[Dim Subscriber].[Subscriber ID].&amp;[9]</MemberUniqueName>
+                      </Member>
+                      <Member>
+                        <MemberUniqueName>[Dim Subscriber].[Subscriber ID].&amp;[10]</MemberUniqueName>
+                      </Member>
+                    </Members>
+                  </Condition>
+                </FilterItem>
+              </FilterItems>
+            </Filter>
+            <Calculations />
+            <Aggregates />
+            <QueryProperties>
+              <IncludeMemberValue>true</IncludeMemberValue>
+            </QueryProperties>
+          </QuerySpecification>
+          <Query>
+            <Statement>EVALUATE SUMMARIZECOLUMNS('Dim Subscriber'[Subscriber ID], 'Dim Subscriber'[Name], FILTER(VALUES('Dim Subscriber'[Subscriber ID]), ('Dim Subscriber'[Subscriber ID] = VALUE("1")) || ('Dim Subscriber'[Subscriber ID] = VALUE("2")) || ('Dim Subscriber'[Subscriber ID] = VALUE("3")) || ('Dim Subscriber'[Subscriber ID] = VALUE("4")) || ('Dim Subscriber'[Subscriber ID] = VALUE("5")) || ('Dim Subscriber'[Subscriber ID] = VALUE("6")) || ('Dim Subscriber'[Subscriber ID] = VALUE("7")) || ('Dim Subscriber'[Subscriber ID] = VALUE("8")) || ('Dim Subscriber'[Subscriber ID] = VALUE("9")) || ('Dim Subscriber'[Subscriber ID] = VALUE("10"))), "Usage Hours", [Usage Hours])</Statement>
+            <ParameterDefinitions />
+          </Query>
+        </QueryDefinition>
+      </rd:DesignerState>
+    </Query>
+    <Fields>
+      <Field Name="Subscriber_ID">
+        <DataField>Dim Subscriber[Subscriber ID]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Name">
+        <DataField>Dim Subscriber[Name]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Usage_Hours">
+        <DataField>[Usage Hours]</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

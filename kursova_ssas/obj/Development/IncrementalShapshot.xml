@@ -1,0 +1,103 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>kursova_ssas</Database>
+    <Server>DESKTOP-Q1RS7KV</Server>
+    <ConnectionString>Data Source=DESKTOP-Q1RS7KV;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>Default</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>MT1osw0Nw1l03/WcSsV+bfV6tYY=07.12.2024 21:44:1307.12.2024 21:44:13</TimeStamp>
+        <ID>
+          <String>Cable TVDW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>VR0wmEryy/1JtedEym7j5VxGFnc=09.12.2024 15:03:1807.12.2024 21:48:08</TimeStamp>
+        <ID>
+          <String>Cable TVDW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>ANuLGT3atsmhz8rMu0uR0DT/swc=07.12.2024 21:55:1207.12.2024 21:50:21</TimeStamp>
+        <ID>
+          <String>Dim Date</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>7U3lmb7gqDk03PGjpIoGqtgXZZY=07.12.2024 21:55:1207.12.2024 21:50:55</TimeStamp>
+        <ID>
+          <String>Dim Payment</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>TMy57TaSklNmHXBw2fAvy94T+Nk=07.12.2024 21:55:1207.12.2024 21:50:55</TimeStamp>
+        <ID>
+          <String>Dim Subscriber</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>UGvgr46ptHXzzc8I6zQNs9lFbDU=07.12.2024 21:55:1207.12.2024 21:50:55</TimeStamp>
+        <ID>
+          <String>Dim Order</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>pIqZ96JA2A1iTtDGGdCFyO6kBWY=07.12.2024 21:55:1207.12.2024 21:50:55</TimeStamp>
+        <ID>
+          <String>Dim Service</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Fdrky63/G/7brhYx/ZnfXhgCc10=07.12.2024 21:55:1207.12.2024 21:50:55</TimeStamp>
+        <ID>
+          <String>Dim Movie</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>HVJ4L6rZ6Elh0Lu8ZD00KKiTNbo=07.12.2024 21:55:1207.12.2024 21:50:55</TimeStamp>
+        <ID>
+          <String>Dim Movie Rating</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>D6cPTHyWa91xRJKR+KEngvjPDc4=09.12.2024 15:03:1807.12.2024 21:50:55xAl7/7ZEnBjifBV4yoo61Trvjj8=07.12.2024 21:59:1207.12.2024 21:50:55</TimeStamp>
+        <ID>
+          <String>Cable TVDW</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>Ek06SaJysjeI1QRqsMF4umzSOOg=07.12.2024 21:38:1107.12.2024 21:38:11</TimeStamp>
+      <ID>
+        <String>kursova_ssas</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2024-12-09T13:03:22.696667Z</LastDeployed>
+</DeploymentSnapshot>

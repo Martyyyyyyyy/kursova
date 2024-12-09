@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.35425.106
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "kursova_ssas", "kursova_ssas.dwproj", "{FDC73B74-F656-4128-B161-FB5DE94064E3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FDC73B74-F656-4128-B161-FB5DE94064E3}.Development|Default.ActiveCfg = Development
+		{FDC73B74-F656-4128-B161-FB5DE94064E3}.Development|Default.Build.0 = Development
+		{FDC73B74-F656-4128-B161-FB5DE94064E3}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0F5EB10B-4E5E-4B47-A82B-FFAB03C666F2}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="DataSource1">
+  <ConnectionProperties>
+    <Extension>OLEDB-MD</Extension>
+    <ConnectString>Data Source=DESKTOP-Q1RS7KV;Initial Catalog=kursova_ssas</ConnectString>
+    <IntegratedSecurity>true</IntegratedSecurity>
+  </ConnectionProperties>
+  <DataSourceID>65567033-4df8-44b6-b0e8-f6ecff2a56f4</DataSourceID>
+</RptDataSource>

@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet1">
+    <Query>
+      <DataSourceReference>DataSource1</DataSourceReference>
+      <CommandText>EVALUATE SUMMARIZECOLUMNS('Dim Subscriber'[Subscriber ID], 'Dim Subscriber'[Name], 'Dim Subscriber'[Debt], "Payment", [Payment])</CommandText>
+      <rd:DesignerState>
+        <QueryDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition">
+          <CommandType>DAX</CommandType>
+          <QuerySpecification xsi:type="MDXQuerySpecification">
+            <Select>
+              <Items>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Dim Subscriber</DimensionName>
+                    <HierarchyName>Subscriber ID</HierarchyName>
+                    <HierarchyUniqueName>[Dim Subscriber].[Subscriber ID]</HierarchyUniqueName>
+                    <LevelName>Subscriber ID</LevelName>
+                    <UniqueName>[Dim Subscriber].[Subscriber ID].[Subscriber ID]</UniqueName>
+                  </ID>
+                  <ItemCaption>Subscriber ID</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Dim Subscriber</DimensionName>
+                    <HierarchyName>Name</HierarchyName>
+                    <HierarchyUniqueName>[Dim Subscriber].[Name]</HierarchyUniqueName>
+                    <LevelName>Name</LevelName>
+                    <UniqueName>[Dim Subscriber].[Name].[Name]</UniqueName>
+                  </ID>
+                  <ItemCaption>Name</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Dim Subscriber</DimensionName>
+                    <HierarchyName>Debt</HierarchyName>
+                    <HierarchyUniqueName>[Dim Subscriber].[Debt]</HierarchyUniqueName>
+                    <LevelName>Debt</LevelName>
+                    <UniqueName>[Dim Subscriber].[Debt].[Debt]</UniqueName>
+                  </ID>
+                  <ItemCaption>Debt</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Measure">
+                    <MeasureName>Payment</MeasureName>
+                    <UniqueName>[Measures].[Payment]</UniqueName>
+                  </ID>
+                  <ItemCaption>Payment</ItemCaption>
+                  <BackColor>true</BackColor>
+                  <ForeColor>true</ForeColor>
+                  <FontFamily>true</FontFamily>
+                  <FontSize>true</FontSize>
+                  <FontWeight>true</FontWeight>
+                  <FontStyle>true</FontStyle>
+                  <FontDecoration>true</FontDecoration>
+                  <FormattedValue>true</FormattedValue>
+                  <FormatString>true</FormatString>
+                </Item>
+              </Items>
+            </Select>
+            <AutoExecute>false</AutoExecute>
+            <From>Cable TVDW</From>
+            <Filter>
+              <FilterItems />
+            </Filter>
+            <Calculations />
+            <Aggregates />
+            <QueryProperties>
+              <IncludeMemberValue>true</IncludeMemberValue>
+            </QueryProperties>
+          </QuerySpecification>
+          <Query>
+            <Statement>EVALUATE SUMMARIZECOLUMNS('Dim Subscriber'[Subscriber ID], 'Dim Subscriber'[Name], 'Dim Subscriber'[Debt], "Payment", [Payment])</Statement>
+            <ParameterDefinitions />
+          </Query>
+        </QueryDefinition>
+      </rd:DesignerState>
+    </Query>
+    <Fields>
+      <Field Name="Subscriber_ID">
+        <DataField>Dim Subscriber[Subscriber ID]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Name">
+        <DataField>Dim Subscriber[Name]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Debt">
+        <DataField>Dim Subscriber[Debt]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Payment">
+        <DataField>[Payment]</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>
